@@ -28,7 +28,7 @@ function sortearAmigo(){
 
         // Eliminar el nombre de la lista y mostrar lista actualizada
         lista_nombres.splice(eliminar_indice, 1);
-        //document.querySelector('#listaAmigos').value = '';
+        
         mostrar_lista(lista_nombres, 'listaAmigos');
         if (lista_nombres.length === 1) {
             alert("Solo queda un nombre, puedes agregar más si lo deseas.");
