@@ -33,6 +33,7 @@ function sortearAmigo(){
         if (lista_nombres.length === 1) {
             alert("Solo queda un nombre, puedes agregar más si lo deseas.");
             document.getElementById('buttonAgregar').disabled = false;
+            lista_nombres.splice(0, lista_nombres.length);
         }
     }
     else{
@@ -63,7 +64,7 @@ function agregarAmigo(seccion){
         // Agregar nombre a una lista y borrar valor de campo
         lista_nombres.push(nombre);
         document.querySelector('input').value = '';
-
+        document.querySelector('#resultado').innerHTML = '';
         mostrar_lista(lista_nombres, 'listaAmigos');
 
     }
